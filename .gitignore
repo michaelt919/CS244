@@ -30,3 +30,11 @@
 *.exe
 *.out
 *.app
+*.log
+*.tlog
+*.idb
+*.pdb
+*.ipch
+*.db
+*.opendb
+Fractions/.vs/Fractions/v15/.suo
