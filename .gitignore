@@ -39,3 +39,6 @@
 *.opendb
 Fractions/.vs/Fractions/v15/.suo
 Fractions/.vs/Fractions/v16/.suo
+*.ilk
+Fibonacci/.vs/Fibonacci/v15/.suo
+Sorting/.vs/Sorting/v15/.suo
