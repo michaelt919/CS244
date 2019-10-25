@@ -20,7 +20,7 @@ public:
     LinkedListIterator<T>& operator ++ ();
 
     // post-increment
-    LinkedListIterator<T>& operator ++ (int);
+    void operator ++ (int);
 
     bool operator == (const LinkedListIterator<T>& other) const;
     bool operator != (const LinkedListIterator<T>& other) const;
@@ -42,7 +42,7 @@ public:
     MutableLinkedListIterator<T>& operator ++ ();       
 
     // post-increment
-    MutableLinkedListIterator<T>& operator ++ (int);    
+    void operator ++ (int);    
 
     bool operator == (const MutableLinkedListIterator<T>& other) const;
     bool operator != (const MutableLinkedListIterator<T>& other) const;
@@ -254,10 +254,9 @@ typename LinkedListIterator<T>& LinkedListIterator<T>::operator ++ () // pre-inc
 }
 
 template <typename T>
-typename LinkedListIterator<T>& LinkedListIterator<T>::operator ++ (int) // post-increment
+void LinkedListIterator<T>::operator ++ (int) // post-increment
 {
     current = current->next;
-    return *this;
 }
 
 
@@ -299,10 +298,9 @@ typename MutableLinkedListIterator<T>& MutableLinkedListIterator<T>::operator ++
 }
 
 template <typename T>
-typename MutableLinkedListIterator<T>& MutableLinkedListIterator<T>::operator ++ (int) // post-increment
+void MutableLinkedListIterator<T>::operator ++ (int) // post-increment
 {
     current = current->next;
-    return *this;
 }
 
 
