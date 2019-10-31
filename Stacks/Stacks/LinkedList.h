@@ -4,6 +4,8 @@
 #include <functional>
 #include "Collection.h"
 
+using namespace std;
+
 template <typename T>
 struct ListNode
 {
