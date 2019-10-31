@@ -2,6 +2,7 @@
 #include <iostream>
 #include <exception>
 #include <functional>
+#include "Collection.h"
 
 template <typename T>
 struct ListNode

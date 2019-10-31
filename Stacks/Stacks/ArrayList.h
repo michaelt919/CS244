@@ -4,6 +4,7 @@
 #include <string>
 #include <exception>
 #include <functional>
+#include "Collection.h"
 
 using namespace std;
 
